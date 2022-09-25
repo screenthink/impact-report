@@ -1,4 +1,7 @@
 # ignore everything in the root except the "assets" directory and impact-report template.
+*
+!.gitignore
+!README.md
 !assets/
 !impact-report.php
 

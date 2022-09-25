@@ -47,9 +47,9 @@ Template Name: Impact Report
 <section class="ir-intro__wrapper">
 	<div class="ir-intro">
 		<div class="ir-intro__content">
-			<p>The world of work is changing at a dizzying rate. Canada needs a skills-innovation ecosystem that can not only respond to these changes, but builds prosperity and sustainability for the long term.</p>
+			<p><?php _e('The world of work is changing at a dizzying rate. Canada needs a skills-innovation ecosystem that can not only respond to these changes, but builds prosperity and sustainability for the long term.', 'impact-report'); ?></p>
 				
-			<p>At FSC, we are dedicated to helping everyone in Canada gain the skills they need to thrive in a changing labour market. We have solidified ourselves as Canada’s world-class skills- innovation hub and we are pleased to showcase some of the impact we have had on the ecosystem in the past few years.</p>
+			<p><?php _e('At FSC, we are dedicated to helping everyone in Canada gain the skills they need to thrive in a changing labour market. We have solidified ourselves as Canada’s world-class skills- innovation hub and we are pleased to showcase some of the impact we have had on the ecosystem in the past few years.', 'impact-report'); ?></p>
 		</div>
 		<div class="ir-intro__hexagons">
 			<?php include(TEMPLATEPATH . '/assets/img/hexagons.svg'); ?>
@@ -73,19 +73,19 @@ Template Name: Impact Report
 					<div class="pillars-intro__pillar--pattern">
 						<?php include(TEMPLATEPATH . '/assets/img/pillar-pattern--insights.svg'); ?>
 					</div>
-					<div class="pillars-intro__pillar--title">Insights</div>
+					<div class="pillars-intro__pillar--title"><?php _e('Insights', 'impact-report'); ?></div>
 				</div>
 				<div class="pillars-intro__pillar">
 					<div class="pillars-intro__pillar--pattern">
 						<?php include(TEMPLATEPATH . '/assets/img/pillar-pattern--solutions.svg'); ?>
 					</div>
-					<div class="pillars-intro__pillar--title">Solutions</div>
+					<div class="pillars-intro__pillar--title"><?php _e('Solutions', 'impact-report'); ?></div>
 				</div>
 				<div class="pillars-intro__pillar">
 					<div class="pillars-intro__pillar--pattern">
 						<?php include(TEMPLATEPATH . '/assets/img/pillar-pattern--systems.svg'); ?>
 					</div>
-					<div class="pillars-intro__pillar--title">Systems<br />Change</div>
+					<div class="pillars-intro__pillar--title"><?php _e('Systems', 'impact-report'); ?><br /><?php _e('Change', 'impact-report'); ?></div>
 				</div>
 			</div>
 		
@@ -100,28 +100,28 @@ Template Name: Impact Report
 				<div class="impact-stories__icon"><?php include(TEMPLATEPATH . '/assets/img/icon--insights.svg'); ?></div>	
 			</section>
 			<section class="impact-stories__slide slide--a slide--01">
-				<h2 class="impact-stories__headline">Insights</h2>	
+				<h2 class="impact-stories__headline"><?php _e('Insights', 'impact-report'); ?></h2>
 			</section>
 			<section class="impact-stories__slide slide--b slide--02">
-				<p class="impact-stories__text">We bring together leaders, practitioners and experts to gain and share the insights that will ensure Canada has the skills and innovation needed for the future.</p>
+				<p class="impact-stories__text"><?php _e('We bring together leaders, practitioners and experts to gain and share the insights that will ensure Canada has the skills and innovation needed for the future.', 'impact-report'); ?></p>
 			</section>
 			<section class="impact-stories__slide slide--c slide--03">
 				<div class="impact-stories__stats-grid">
 					<div class="impact-stories__stat">
 						<div class="impact-stories__stat--num">300+</div>
-						<div class="impact-stories__stat--text">partnerships with ecosystem experts</div>
+						<div class="impact-stories__stat--text"><?php _e('partnerships with ecosystem experts', 'impact-report'); ?></div>
 					</div>
 					<div class="impact-stories__stat">
 						<div class="impact-stories__stat--num">250+</div>
-						<div class="impact-stories__stat--text">research reports, learning bulletins and web content published</div>
+						<div class="impact-stories__stat--text"><?php _e('research reports, learning bulletins and web content published', 'impact-report'); ?></div>
 					</div>
 					<div class="impact-stories__stat">
 						<div class="impact-stories__stat--num">13</div>
-						<div class="impact-stories__stat--text">digital platforms and career navigation tools delivered</div>
+						<div class="impact-stories__stat--text"><?php _e('digital platforms and career navigation tools delivered', 'impact-report'); ?></div>
 					</div>
 					<div class="impact-stories__stat">
 						<div class="impact-stories__stat--num">150+</div>
-						<div class="impact-stories__stat--text">speaking engagements and event appearances</div>
+						<div class="impact-stories__stat--text"><?php _e('speaking engagements and event appearances', 'impact-report'); ?></div>
 					</div>
 				</div>
 			</section>
@@ -129,28 +129,28 @@ Template Name: Impact Report
 				<div class="impact-stories__icon"><?php include(TEMPLATEPATH . '/assets/img/icon--solutions.svg'); ?></div>	
 			</section>
 			<section class="impact-stories__slide slide--a slide--04">
-				<h2 class="impact-stories__headline">Solutions</h2>	
+				<h2 class="impact-stories__headline"><?php _e('Solutions', 'impact-report'); ?></h2>	
 			</section>
 			<section class="impact-stories__slide slide--b slide--05">
-				<p class="impact-stories__text">We are working with governments, industry, post-secondary institutions and skills practitioners to <strong>scale solutions from pilots to pan-Canadian programs</strong>.</p>
+				<p class="impact-stories__text"><?php _e('We are working with governments, industry, post-secondary institutions and skills practitioners to', 'impact-report'); ?> <strong><?php _e('scale solutions from pilots to pan-Canadian programs', 'impact-report'); ?></strong>.</p>
 			</section>
 			<section class="impact-stories__slide slide--c slide--06">
 				<div class="impact-stories__stats-grid">
 					<div class="impact-stories__stat">
 						<div class="impact-stories__stat--num">209M</div>
-						<div class="impact-stories__stat--text">invested in projects</div>
+						<div class="impact-stories__stat--text"><?php _e('invested in projects', 'impact-report'); ?></div>
 					</div>
 					<div class="impact-stories__stat">
 						<div class="impact-stories__stat--num">20</div>
-						<div class="impact-stories__stat--text">sectors supported across all provinces and territories</div>
+						<div class="impact-stories__stat--text"><?php _e('sectors supported across all provinces and territories', 'impact-report'); ?></div>
 					</div>
 					<div class="impact-stories__stat">
 						<div class="impact-stories__stat--num">44%</div>
-						<div class="impact-stories__stat--text">of projects are employer-led or partnered solutions</div>
+						<div class="impact-stories__stat--text"><?php _e('of projects are employer-led or partnered solutions', 'impact-report'); ?></div>
 					</div>
 					<div class="impact-stories__stat">
 						<div class="impact-stories__stat--num">15%</div>
-						<div class="impact-stories__stat--text">of projects are growing or scaling</div>
+						<div class="impact-stories__stat--text"><?php _e('of projects are growing or scaling', 'impact-report'); ?></div>
 					</div>
 				</div>
 			</section>
@@ -158,28 +158,28 @@ Template Name: Impact Report
 				<div class="impact-stories__icon"><?php include(TEMPLATEPATH . '/assets/img/icon--systems.svg'); ?></div>	
 			</section>
 			<section class="impact-stories__slide slide--a slide--07">
-				<h2 class="impact-stories__headline">Systems Change</h2>	
+				<h2 class="impact-stories__headline"><?php _e('Systems Change', 'impact-report'); ?></h2>	
 			</section>
 			<section class="impact-stories__slide slide--b slide--08">
-				<p class="impact-stories__text">We are now recognized as a trusted partner and leader in skills innovation that influences systems change. By fostering collaboration, engaging with policy-makers and investing in the skills development ecosystem, we ensure promising solutions grow in scale and innovation, and are adopted.</p>
+				<p class="impact-stories__text"><?php _e('We are now recognized as a trusted partner and leader in skills innovation that influences systems change. By fostering collaboration, engaging with policy-makers and investing in the skills development ecosystem, we ensure promising solutions grow in scale and innovation, and are adopted.', 'impact-report'); ?></p>
 			</section>
 			<section class="impact-stories__slide slide--c slide--09">
 				<div class="impact-stories__stats-grid">
 					<div class="impact-stories__stat">
 						<div class="impact-stories__stat--num">4</div>
-						<div class="impact-stories__stat--text">provincial partnerships with Quebec, Alberta, Saskatchewan, and British Columbia</div>
+						<div class="impact-stories__stat--text"><?php _e('provincial partnerships with Quebec, Alberta, Saskatchewan, and British Columbia', 'impact-report'); ?></div>
 					</div>
 					<div class="impact-stories__stat">
 						<div class="impact-stories__stat--num">1400+</div>
-						<div class="impact-stories__stat--text">active members in our Community of Practice</div>
+						<div class="impact-stories__stat--text"><?php _e('active members in our Community of Practice', 'impact-report'); ?></div>
 					</div>
 					<div class="impact-stories__stat">
 						<div class="impact-stories__stat--num">74%</div>
-						<div class="impact-stories__stat--text">of partners participating in our Innovation Lab</div>
+						<div class="impact-stories__stat--text"><?php _e('of partners participating in our Innovation Lab', 'impact-report'); ?></div>
 					</div>
 					<div class="impact-stories__stat">
 						<div class="impact-stories__stat--num">1st</div>
-						<div class="impact-stories__stat--text">example of a pilot being adopted as a policy solution at scale by provincial government</div>
+						<div class="impact-stories__stat--text"><?php _e('example of a pilot being adopted as a policy solution at scale by provincial government', 'impact-report'); ?></div>
 					</div>
 				</div>
 			</section>
@@ -191,25 +191,25 @@ Template Name: Impact Report
 	<div class="economy">
 		<div class="economy__wrapper">
 			<header class="economy__header">
-				<h2 class="economy__headline">The need to anticipate significant changes to our rapidly evolving economy is urgent:</h2>
+				<h2 class="economy__headline"><?php _e('The need to anticipate significant changes to our rapidly evolving economy is urgent:', 'impact-report'); ?></h2>
 			</header>
 			<div class="economy__grid">
 				<div class="economy-item">
 					<div class="economy-item__icon"><?php include(TEMPLATEPATH . '/assets/img/plus.svg'); ?></div>
 					<div class="economy-item__text">
-						<strong>Unmet skills needs cost the economy $25B</strong> or 1.3% of GDP in 2020, up 60% from 2015
+						<strong><?php _e('Unmet skills needs cost the economy $25B', 'impact-report'); ?></strong> <?php _e('or 1.3% of GDP in 2020, up 60% from 2015', 'impact-report'); ?>
 					</div>
 				</div>
 				<div class="economy-item">
 					<div class="economy-item__icon"><?php include(TEMPLATEPATH . '/assets/img/plus.svg'); ?></div>
 					<div class="economy-item__text">
-						<strong>900,000+ positions were unfilled</strong> in 2021; half remained unfilled for 60 days
+						<strong><?php _e('900,000+ positions were unfilled', 'impact-report'); ?></strong> <?php _e('in 2021; half remained unfilled for 60 days', 'impact-report'); ?>
 					</div>
 				</div>
 				<div class="economy-item">
 					<div class="economy-item__icon"><?php include(TEMPLATEPATH . '/assets/img/plus.svg'); ?></div>
 					<div class="economy-item__text">
-						<strong>The pandemic has accelerated automation</strong>, disrupting more sectors and workers
+						<strong><?php _e('The pandemic has accelerated automation', 'impact-report'); ?></strong>, <?php _e('disrupting more sectors and workers', 'impact-report'); ?>
 					</div>
 				</div>
 			</div>
@@ -222,7 +222,7 @@ Template Name: Impact Report
 		<div class="stats__wrapper">
 			<header class="stats__header">
 				<h2 class="stats__headline">
-					<?php _e('FSC’s impact at a glance'); ?>
+					<?php _e('FSC’s impact at a glance', 'impact-report'); ?>
 				</h2>
 			</header>
 			<div class="stats__grid">
@@ -235,29 +235,29 @@ Template Name: Impact Report
 						<div class="stat__num stat--01">0.1</div>
 						<div>M</div>
 					</div>
-					<div class="stat__text">audience reach of our projects and insights</div>
+					<div class="stat__text"><?php _e('audience reach of our projects and insights', 'impact-report'); ?></div>
 				</div>
 				<div class="stat">
 					<h3 class="stat__headline">
-						Partnering on<br />
-						<strong>195+ innovation pilots</strong> with industry, post-secondary and skills practitioners & growing/scaling 25 initiatives across sectors and regions.
+						<?php _e('Partnering on', 'impact-report'); ?><br />
+						<strong><?php _e('195+ innovation pilots</strong> with industry, post-secondary and skills practitioners & growing/scaling 25 initiatives across sectors and regions.', 'impact-report'); ?>
 					</h3>
 					<div class="stat__wrap">
 						<div class="stat__num stat--02">100</div>
 						<div>+</div>
 					</div>
-					<div class="stat__text">network of practitioners, influencers and decision makers</div>
+					<div class="stat__text"><?php _e('network of practitioners, influencers and decision makers', 'impact-report'); ?></div>
 				</div>
 				<div class="stat">
 					<h3 class="stat__headline">
-						Influencing policy adoption through</br />
-						<strong>4 established provincial partnerships</strong> (BC, AB, SK, QC) and growing, encouraging investment into systems-oriented approaches.
+						<?php _e('nfluencing policy adoption through', 'impact-report'); ?>I</br />
+						<strong><?php _e('4 established provincial partnerships', 'impact-report'); ?></strong> <?php _e('(BC, AB, SK, QC) and growing, encouraging investment into systems-oriented approaches.', 'impact-report'); ?>
 					</h3>
 					<div class="stat__wrap">
 						<div class="stat__num stat--03">100</div>
 						<div>+</div>
 					</div>
-					<div class="stat__text">people benefited from skills training and/or employment opportunities</div>
+					<div class="stat__text"><?php _e('people benefited from skills training and/or employment opportunities', 'impact-report'); ?></div>
 				</div>
 			</div>
 		</div>
@@ -267,20 +267,20 @@ Template Name: Impact Report
 		<div class="stats-chart__wrapper">
 			<div class="stats-chart__grid">
 				<div class="stats-chart__text">
-					<h2>79% of our projects focus on addressing barriers and advancing opportunities for <strong>under-represented groups</strong>.</h2>
+					<h2><?php _e('79% of our projects focus on addressing barriers and advancing opportunities for', 'impact-report'); ?> <strong><?php _e('under-represented groups', 'impact-report'); ?></strong>.</h2>
 				</div>
 				<div class="stats-chart__stat">
 					<div class="chart">
 						<div class="chart__image"><?php include(TEMPLATEPATH . '/assets/img/chart.svg'); ?></div>
 						<div class="chart__data">
-							<div class="chart__data-item chart__data-item--01">Language Minority Groups</div>
-							<div class="chart__data-item chart__data-item--02">Indigenous Peoples</div>
-							<div class="chart__data-item chart__data-item--03">Women</div>
-							<div class="chart__data-item chart__data-item--04">Youth</div>
-							<div class="chart__data-item chart__data-item--05">Rural, Remote & Northern Communities</div>
-							<div class="chart__data-item chart__data-item--06">Racialized Communities</div>
-							<div class="chart__data-item chart__data-item--07">People with Disabilities</div>
-							<div class="chart__data-item chart__data-item--08">Newcomers & Immigrants</div>
+							<div class="chart__data-item chart__data-item--01"><?php _e('Language Minority Groups', 'impact-report'); ?></div>
+							<div class="chart__data-item chart__data-item--02"><?php _e('Indigenous Peoples', 'impact-report'); ?></div>
+							<div class="chart__data-item chart__data-item--03"><?php _e('Women', 'impact-report'); ?></div>
+							<div class="chart__data-item chart__data-item--04"><?php _e('Youth', 'impact-report'); ?></div>
+							<div class="chart__data-item chart__data-item--05"><?php _e('Rural, Remote & Northern Communities', 'impact-report'); ?></div>
+							<div class="chart__data-item chart__data-item--06"><?php _e('Racialized Communities', 'impact-report'); ?></div>
+							<div class="chart__data-item chart__data-item--07"><?php _e('People with Disabilities', 'impact-report'); ?></div>
+							<div class="chart__data-item chart__data-item--08"><?php _e('Newcomers & Immigrants', 'impact-report'); ?></div>
 						</div>
 					</div>
 				</div>
@@ -290,7 +290,7 @@ Template Name: Impact Report
 		<div class="media media--03">
 			<div class="media__mask"></div>
 			<div class="media__grid">
-				<div class="media__label">Watch Video</div>
+				<div class="media__label"><?php _e('Watch Video', 'impact-report'); ?></div>
 				<div class="media__icon"><?php include(TEMPLATEPATH . '/assets/img/video.svg'); ?></div>
 				<div class="media__content">
 					<video controls width="100%">
@@ -312,11 +312,11 @@ Template Name: Impact Report
 					</div>
 				</div>
 				<div class="stats-map__text">
-					<h2>Investments in skills innovation across Canada Language Minority Groups Indigenous Peoples Women Youth</h2>
-					<p>We are working directly with many stake- holders including practitioners, employers and labour, post-secondary institutions and federal and provincial governments to co-invest and pilot new systems-oriented approaches that expand and improve skills training.</p>
+					<h2><?php _e('Investments in skills innovation across Canada Language Minority Groups Indigenous Peoples Women Youth', 'impact-report'); ?></h2>
+					<p><?php _e('We are working directly with many stake- holders including practitioners, employers and labour, post-secondary institutions and federal and provincial governments to co-invest and pilot new systems-oriented approaches that expand and improve skills training.', 'impact-report'); ?></p>
 					
 					<div class="map__data">
-						<div class="map__data-header">Projects</div>
+						<div class="map__data-header"><?php _e('Projects', 'impact-report'); ?></div>
 						<div class="map__data-item map__data-item--01"><div class="prov">YK</div><div class="prov-projects">7</div></div>
 						<div class="map__data-item map__data-item--02"><div class="prov">BC</div><div class="prov-projects">67</div></div>
 						<div class="map__data-item map__data-item--03"><div class="prov">AB</div><div class="prov-projects">27</div></div>
@@ -334,17 +334,16 @@ Template Name: Impact Report
 				</div>
 			</div>
 		</div>
-		
 		<div class="media media--01">
 			<div class="media__mask"></div>
 			<div class="media__grid">
-				<div class="media__label">Read Testimonial</div>
+				<div class="media__label"><?php _e('Read Testimonial', 'impact-report'); ?></div>
 				<div class="media__icon"><?php include(TEMPLATEPATH . '/assets/img/quotes.svg'); ?></div>
 				<div class="media__content">
-					<p class="media__text">FSC has set up something truly amazing to push our ecosystem forward, and we can access experts who support research that uncovers why In Motion & Momentum works, what its impacts are, and how it benefits the system.</p>
+					<p class="media__text"><?php _e('FSC has set up something truly amazing to push our ecosystem forward, and we can access experts who support research that uncovers why In Motion & Momentum works, what its impacts are, and how it benefits the system.', 'impact-report'); ?></p>
 					<div class="media__cite">
 						<div class="media__cite-name">Donnalee Bell</div>
-						<div class="media__cite-position">Managing Director, Canadian Career Development Foundation</div>
+						<div class="media__cite-position"><?php _e('Managing Director, Canadian Career Development Foundation', 'impact-report'); ?></div>
 					</div>
 				</div>
 				<div class="media__plus"><?php include(TEMPLATEPATH . '/assets/img/plus.svg'); ?></div>
@@ -363,16 +362,15 @@ Template Name: Impact Report
 				<div class="impact-story__content">
 					<header class="impact-story__header">
 						<div class="impact-story__icon"><?php include(TEMPLATEPATH . '/assets/img/icon--insights.svg'); ?></div>
-						<h2 class="impact-story__headline">Insights to enable opportunities beyond social assistance</h2>
+						<h2 class="impact-story__headline"><?php _e('Insights to enable opportunities beyond social assistance', 'impact-report'); ?></h2>
 					</header>
-					<p>Kate, an Inuit woman living in a remote community, had been struggling for years with anxiety and precarious work. Like many, she entered the labour market before being work-ready, cycling back into social assistance. Through In Motion & Momentum, a program that serves people with systemic and intrapersonal challenges, she formulated new life goals and enrolled in a trades and technology program to start a career.</p>
+					<p><?php _e('Kate, an Inuit woman living in a remote community, had been struggling for years with anxiety and precarious work. Like many, she entered the labour market before being work-ready, cycling back into social assistance. Through In Motion & Momentum, a program that serves people with systemic and intrapersonal challenges, she formulated new life goals and enrolled in a trades and technology program to start a career.', 'impact-report'); ?></p>
 					
-					<p>As the program expands across Canada, there has been evidence of success. In the program’s seven years in New Brunswick, <stong>the province’s social assistance caseloads dropped by 10%</stong> and had a positive impact on participants and their families and government investments. The results indicate more vulnerable and marginalized groups can be reached.</p>
+					<p><?php _e('As the program expands across Canada, there has been evidence of success. In the program’s seven years in New Brunswick, <stong>the province’s social assistance caseloads dropped by 10%</stong> and had a positive impact on participants and their families and government investments. The results indicate more vulnerable and marginalized groups can be reached.', 'impact-report'); ?></p>
 					
-					<p><a href="#" class="button-neon button-neon--small">Read Impact Story</a></p>
+					<p><a href="#" class="button-neon button-neon--small"><?php _e('Read Impact Story', 'impact-report'); ?></a></p>
 				</div>
 			</div>
-			
 			<div class="impact-story">
 				<div class="impact-story__image">
 					<img src="<?php bloginfo('template_directory'); ?>/assets/img/Filipe.jpg" alt="">
@@ -380,17 +378,17 @@ Template Name: Impact Report
 				<div class="impact-story__content">
 					<header class="impact-story__header">
 						<div class="impact-story__icon"><?php include(TEMPLATEPATH . '/assets/img/icon--solutions.svg'); ?></div>
-						<h2 class="impact-story__headline">Mid-career transitions from energy to tech</h2>
+						<h2 class="impact-story__headline"><?php _e('Mid-career transitions from energy to tech', 'impact-report'); ?></h2>
 					</header>
-					<p>The oil and gas sector in Calgary has had to pivot, displacing many highly skilled workers. FSC is supporting a Calgary Economic Development solution to help these workers transition to the high-growth IT sector and fuel Alberta’s economy.</p>
+					<p><?php _e('The oil and gas sector in Calgary has had to pivot, displacing many highly skilled workers. FSC is supporting a Calgary Economic Development solution to help these workers transition to the high-growth IT sector and fuel Alberta’s economy.', 'impact-report'); ?></p>
 					
-					<p>The EDGE UP program offers training pathways developed by post-secondary institutions, training organizations and employers. The OECD has endorsed the program’s promise for replication in other sectors and regions, and to inform future policies. Companies like Amazon Web Services have partnered to fuel their local talent pipeline.</p>
-					<p><strong>More than 70% of the first cohort is now employed in tech jobs or furthering their education</strong>. Felipe Moreno spent 15 years as a mechanical engineer. After completing EDGE UP, he landed a job as a data analyst at a Calgary fintech company. The program is expanding to new cohorts and digital platforms.</p>
+					<p><?php _e('The EDGE UP program offers training pathways developed by post-secondary institutions, training organizations and employers. The OECD has endorsed the program’s promise for replication in other sectors and regions, and to inform future policies. Companies like Amazon Web Services have partnered to fuel their local talent pipeline.', 'impact-report'); ?></p>
 					
-					<p><a href="#" class="button-neon button-neon--small">Read Impact Story</a></p>
+					<p><strong><?php _e('More than 70% of the first cohort is now employed in tech jobs or furthering their education', 'impact-report'); ?></strong>. <?php _e('Felipe Moreno spent 15 years as a mechanical engineer. After completing EDGE UP, he landed a job as a data analyst at a Calgary fintech company. The program is expanding to new cohorts and digital platforms.', 'impact-report'); ?></p>
+					
+					<p><a href="#" class="button-neon button-neon--small"><?php _e('Read Impact Story', 'impact-report'); ?></a></p>
 				</div>
 			</div>
-			
 			<div class="impact-story">
 				<div class="impact-story__image">
 					<img src="<?php bloginfo('template_directory'); ?>/assets/img/Saeed.jpg" alt="">
@@ -398,15 +396,15 @@ Template Name: Impact Report
 				<div class="impact-story__content">
 					<header class="impact-story__header">
 						<div class="impact-story__icon"><?php include(TEMPLATEPATH . '/assets/img/icon--systems.svg'); ?></div>
-						<h2 class="impact-story__headline">Accelerating newcomer integration</h2>
+						<h2 class="impact-story__headline"><?php _e('Accelerating newcomer integration', 'impact-report'); ?></h2>
 					</header>
-					<p>Saeed arrived from Iran with a decade of experience in the financial industry but couldn’t get a foothold in the Canadian labour market. Many newcomers whose foreign credentials aren’t recognized face barriers that exacerbate higher unemployment and low wages.</p>
+					<p><?php _e('Saeed arrived from Iran with a decade of experience in the financial industry but couldn’t get a foothold in the Canadian labour market. Many newcomers whose foreign credentials aren’t recognized face barriers that exacerbate higher unemployment and low wages.', 'impact-report'); ?></p>
 					
-					<p>Through FAST, an innovative online program that connects organizations that serve immigrants with those that provide career guidance, Saeed received assessments of his technical and soft skills to land a job in finance.</p>
+					<p><?php _e('Through FAST, an innovative online program that connects organizations that serve immigrants with those that provide career guidance, Saeed received assessments of his technical and soft skills to land a job in finance.', 'impact-report'); ?></p>
 					
-					<p>FAST’s success in helping newcomers navigate Canada’s job market is resulting in its expansion into more sectors including biotechnology and life sciences, skilled trades, culinary arts and long-term care. The government of New Brunswick has adopted FAST as a policy solution at scale.</p>
+					<p><?php _e('FAST’s success in helping newcomers navigate Canada’s job market is resulting in its expansion into more sectors including biotechnology and life sciences, skilled trades, culinary arts and long-term care. The government of New Brunswick has adopted FAST as a policy solution at scale.', 'impact-report'); ?></p>
 					
-					<p><a href="#" class="button-neon button-neon--small">Read Impact Story</a></p>
+					<p><a href="#" class="button-neon button-neon--small"><?php _e('Read Impact Story', 'impact-report'); ?></a></p>
 				</div>
 			</div>
 			
@@ -416,7 +414,7 @@ Template Name: Impact Report
 	<div class="milestones__wrapper">
 		<div class="milestones">
 			<header class="milestones__header">
-				<h2 class="milestones__headline">Milestones</h2>
+				<h2 class="milestones__headline"><?php _e('Milestones', 'impact-report'); ?></h2>
 			</header>
 			<div class="timeline__grid">
 				<div class="timeline"></div>
@@ -427,10 +425,10 @@ Template Name: Impact Report
 						<div class="milestone__header--edge-02"></div>
 					</header>
 					<ul class="milestone__list">
-						<li>FSC is launched</li>
-						<li>First cross-Canada regional sounding tour</li>
-						<li>Inaugural research series "Skills Next"</li>
-						<li>First round of innovation pilots launched</li>
+						<li><?php _e('FSC is launched', 'impact-report'); ?></li>
+						<li><?php _e('First cross-Canada regional sounding tour', 'impact-report'); ?></li>
+						<li><?php _e('Inaugural research series "Skills Next"', 'impact-report'); ?></li>
+						<li><?php _e('First round of innovation pilots launched', 'impact-report'); ?></li>
 					</ul>
 				</div>
 				<div class="milestone milestone--02">
@@ -440,10 +438,10 @@ Template Name: Impact Report
 						<div class="milestone__header--edge-02"></div>
 					</header>
 					<ul class="milestone__list flip">
-						<li>Appointment of advisory board</li>
-						<li>Launch of Strategic Plan Launch of the Community of Practice</li>
-						<li>Second cross-Canada regional sounding tour</li>
-						<li>30 innovation and evaluation pilots funded</li>
+						<li><?php _e('Appointment of advisory board', 'impact-report'); ?></li>
+						<li><?php _e('Launch of Strategic Plan Launch of the Community of Practice', 'impact-report'); ?></li>
+						<li><?php _e('Second cross-Canada regional sounding tour', 'impact-report'); ?></li>
+						<li><?php _e('30 innovation and evaluation pilots funded', 'impact-report'); ?></li>
 					</ul>
 				</div>
 				<div class="milestone milestone--03">
@@ -453,10 +451,10 @@ Template Name: Impact Report
 						<div class="milestone__header--edge-02"></div>
 					</header>
 					<ul class="milestone__list">
-						<li>64 shock-proofing the future of work pilot launched</li>
-						<li>Launch of OpportuNext tool for jobseekers</li>
-						<li>10 promising pilots scaled</li>
-						<li>Upskilling partnerships targeted to key economic sectors</li>
+						<li><?php _e('64 shock-proofing the future of work pilot launched', 'impact-report'); ?></li>
+						<li><?php _e('Launch of OpportuNext tool for jobseekers', 'impact-report'); ?></li>
+						<li><?php _e('10 promising pilots scaled', 'impact-report'); ?></li>
+						<li><?php _e('Upskilling partnerships targeted to key economic sectors', 'impact-report'); ?></li>
 					</ul>
 				</div>
 				<div class="milestone milestone--04">
@@ -466,55 +464,52 @@ Template Name: Impact Report
 						<div class="milestone__header--edge-02"></div>
 					</header>
 					<ul class="milestone__list flip">
-						<li>Inaugural Future Skills Summit</li>
-						<li>Milestone partnership with Quebec on future skills innovation</li>
-						<li>13 pilots expanded to tackle skills shortages</li>
+						<li><?php _e('Inaugural Future Skills Summit', 'impact-report'); ?></li>
+						<li><?php _e('Milestone partnership with Quebec on future skills innovation', 'impact-report'); ?></li>
+						<li><?php _e('13 pilots expanded to tackle skills shortages', 'impact-report'); ?></li>
 					</ul>
 				</div>
 				<div class="timeline__transition"></div>
 			</div>
 			
-			<div class="pandemic-pivot">
-				
+			<div class="pandemic-pivot">	
 				<div class="pandemic-pivot__open">
 					<div class="pandemic-pivot__dot"></div>
 					<div class="pandemic-pivot__line"><?php include(TEMPLATEPATH . '/assets/img/dotted-line.svg'); ?></div>
-					<div class="pandemic-pivot__label">Pandemic Pivot</div>
+					<div class="pandemic-pivot__label"><?php _e('Pandemic Pivot', 'impact-report'); ?></div>
 					<button class="pandemic-pivot__plus"><?php include(TEMPLATEPATH . '/assets/img/plus.svg'); ?></button>
 				</div>
-				
 				<div class="pandemic-pivot__wrapper">
 					<div class="pandemic-pivot__content">
-						<h2 class="pandemic-pivot__headline">When COVID-19 hit in FSC’s second year, we pivoted to support Canada’s recovery while staying attuned to future labour market disruptions.</h2>
+						<h2 class="pandemic-pivot__headline"><?php _e('When COVID-19 hit in FSC’s second year, we pivoted to support Canada’s recovery while staying attuned to future labour market disruptions.', 'impact-report'); ?></h2>
 						<ul class="pandemic-pivot__list">
-							<li>We supported displaced hospitality and tourism workers with our rapid response project</li>
-							<li>We researched COVID’s impact on jobs, sectors, youth, mental health and equity</li>
-							<li>We funded 64 innovation pilots to shock-proof Canada’s workforce in the most significant economic disruption of our times</li>
+							<li><?php _e('We supported displaced hospitality and tourism workers with our rapid response project', 'impact-report'); ?></li>
+							<li><?php _e('We researched COVID’s impact on jobs, sectors, youth, mental health and equity', 'impact-report'); ?></li>
+							<li><?php _e('We funded 64 innovation pilots to shock-proof Canada’s workforce in the most significant economic disruption of our times', 'impact-report'); ?></li>
 						</ul>
 					</div>
 				</div>
 			</div>
-			
 		</div>
 		
 		<div class="accountability-box">
-			<h2 class="accountability-box__headline">Our commitment to excellence and accountability</h2>
-			<p class="accountability-box__text">We adhere to the highest standards of financial accountability and transparency, earning the trust of everyone in Canada to steward public funds to catalyze skills innovation and training and enable everyone to thrive in an evolving economy.</p>
+			<h2 class="accountability-box__headline"<?php _e('Our commitment to excellence and accountability', 'impact-report'); ?></h2>
+			<p class="accountability-box__text"><?php _e('We adhere to the highest standards of financial accountability and transparency, earning the trust of everyone in Canada to steward public funds to catalyze skills innovation and training and enable everyone to thrive in an evolving economy.', 'impact-report'); ?></p>
 			<div class="accountability-box__cta">
-				<a href="#" class="button"><span>Link To More</span></a>
+				<a href="#" class="button"><span><?php _e('Learn More', 'impact-report'); ?></span></a>
 			</div>
 		</div>
 		
 		<div class="media media--02">
 			<div class="media__mask"></div>
 			<div class="media__grid">
-				<div class="media__label">Read Testimonial</div>
+				<div class="media__label"><?php _e('Read Testimonial', 'impact-report'); ?></div>
 				<div class="media__icon"><?php include(TEMPLATEPATH . '/assets/img/quotes.svg'); ?></div>
 				<div class="media__content">
-					<p class="media__text">FSC has set up something truly amazing to push our ecosystem forward, and we can access experts who support research that uncovers why In Motion & Momentum works, what its impacts are, and how it benefits the system.</p>
+					<p class="media__text"><?php _e('FSC has set up something truly amazing to push our ecosystem forward, and we can access experts who support research that uncovers why In Motion & Momentum works, what its impacts are, and how it benefits the system.', 'impact-report'); ?></p>
 					<div class="media__cite">
 						<div class="media__cite-name">Donnalee Bell</div>
-						<div class="media__cite-position">Managing Director, Canadian Career Development Foundation</div>
+						<div class="media__cite-position"><?php _e('Managing Director, Canadian Career Development Foundation', 'impact-report'); ?></div>
 					</div>
 				</div>
 				<div class="media__plus"><?php include(TEMPLATEPATH . '/assets/img/plus.svg'); ?></div>
@@ -522,28 +517,27 @@ Template Name: Impact Report
 		</div>
 		
 	</div>
-	
 	<section class="cards">
 		<div class="cards__wrapper">
 			<header class="cards__header">
-				<h2 class="cards__headline">Missing Headline... elit libero, a pharetra augue.</h2>
-				<p class="cards__byline">Missing byline... Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+				<h2 class="cards__headline"><?php _e('Missing Headline... elit libero, a pharetra augue.', 'impact-report'); ?></h2>
+				<p class="cards__byline"><?php _e('Missing byline... Nullam quis risus eget urna mollis ornare vel eu leo.', 'impact-report'); ?></p>
 			</header>
 			<div class="cards__grid">
 				<div class="card card--01">
-					<h2 class="card__headline">Events</h2>
-					<p class="card__text">Explore the upcoming and past events from the Future Skills Centre and its partners across the country.</p>
-					<a href="#" class="card__cta button-neon button-neon--small">Explore Events</a>
+					<h2 class="card__headline"><?php _e('Events', 'impact-report'); ?></h2>
+					<p class="card__text"><?php _e('Explore the upcoming and past events from the Future Skills Centre and its partners across the country.', 'impact-report'); ?></p>
+					<a href="#" class="card__cta button-neon button-neon--small"><?php _e('Explore Events', 'impact-report'); ?></a>
 				</div>
 				<div class="card card--02">
-					<h2 class="card__headline">Join the Community of Practice</h2>
-					<p class="card__text">Facilitate connections to make change happen. Share your experiences, access curated products, case studies and tools, explore common interests, and network with others who are preparing Canadians for the future of work! Find out how others are working to support.</p>
-					<a href="#" class="card__cta button-neon button-neon--small">Join Community</a>
+					<h2 class="card__headline"><?php _e('Join the Community of Practice', 'impact-report'); ?></h2>
+					<p class="card__text"><?php _e('Facilitate connections to make change happen. Share your experiences, access curated products, case studies and tools, explore common interests, and network with others who are preparing Canadians for the future of work! Find out how others are working to support.', 'impact-report'); ?></p>
+					<a href="#" class="card__cta button-neon button-neon--small"><?php _e('Join Community', 'impact-report'); ?></a>
 				</div>
 				<div class="card card--03">
-					<h2 class="card__headline">Explore the stories of future skills</h2>
-					<p class="card__text">Read our blog, or listen to our podcast.</p>
-					<a href="#" class="card__cta button-neon button-neon--small">Explore Stories</a>
+					<h2 class="card__headline"><?php _e('Explore the stories of future skills', 'impact-report'); ?></h2>
+					<p class="card__text"><?php _e('Read our blog, or listen to our podcast.', 'impact-report'); ?></p>
+					<a href="#" class="card__cta button-neon button-neon--small"><?php _e('Explore Stories', 'impact-report'); ?></a>
 				</div>
 			</div>
 		</div>

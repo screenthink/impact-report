@@ -123,11 +123,13 @@
 	}
 	
 	function st_scripts() {
-		wp_enqueue_style( 'st-style', get_stylesheet_directory_uri() . '/assets/css/site.css', array());
-		wp_enqueue_style( 'st-ir-style', get_stylesheet_directory_uri() . '/assets/css/impact-report.min.css', array());
-		wp_enqueue_style( 'st-owl-style', get_stylesheet_directory_uri() . '/assets/css/owl.carousel.css', array() );
-		wp_enqueue_script( 'st-global', get_stylesheet_directory_uri() . '/assets/js/global-min.js', array( 'jquery' ), true );
-		wp_enqueue_script( 'st-owl-js', get_stylesheet_directory_uri() . '/assets/js/owl.carousel.js', array(), false, true );
+		if ( is_page_template( 'impact-report.php' ) ) {
+			wp_enqueue_style( 'st-style', get_stylesheet_directory_uri() . '/assets/css/site.css', array());
+			wp_enqueue_style( 'st-ir-style', get_stylesheet_directory_uri() . '/assets/css/impact-report.min.css', array());
+			wp_enqueue_style( 'st-owl-style', get_stylesheet_directory_uri() . '/assets/css/owl.carousel.css', array() );
+			wp_enqueue_script( 'st-global', get_stylesheet_directory_uri() . '/assets/js/global-min.js', array( 'jquery' ), true );
+			wp_enqueue_script( 'st-owl-js', get_stylesheet_directory_uri() . '/assets/js/owl.carousel.js', array(), false, true );
+		}
 	}
 	add_action( 'wp_enqueue_scripts', 'st_scripts' );
 	

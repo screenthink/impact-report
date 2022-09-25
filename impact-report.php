@@ -186,7 +186,7 @@ Template Name: Impact Report
 		</div>
 	</div>
 	
-	<div class="midnight"></div>
+	<div class="midnight">y</div>
 	
 	<div class="economy">
 		<div class="economy__wrapper">

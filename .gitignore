@@ -1,0 +1,6 @@
+# ignore everything in the root except the "assets" directory and impact-report template.
+!assets/
+!impact-report.php
+
+# ignore global site styles
+assets/css/site.css

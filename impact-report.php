@@ -3,6 +3,17 @@
 Template Name: Impact Report
 */
 ?>
+
+<?php
+	wp_enqueue_style( 'st-ir-style', get_stylesheet_directory_uri() . '/assets/css/impact-report.min.css', array(), filemtime( get_stylesheet_directory() . '/assets/css/impact-report.min.css' ));
+	wp_enqueue_style( 'st-owl-style', get_stylesheet_directory_uri() . '/assets/css/owl.carousel.css', array() );
+	wp_enqueue_script( 'st-global', get_stylesheet_directory_uri() . '/assets/js/global-min.js', array( 'jquery' ), true );
+	wp_enqueue_script( 'st-owl-js', get_stylesheet_directory_uri() . '/assets/js/owl.carousel.js', array(), false, true );
+	wp_enqueue_script( 'gsap-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js', array(), false, true );
+	wp_enqueue_script( 'gsap-scroll-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollToPlugin.min.js', array(), false, true );
+	wp_enqueue_script( 'gsap-scrolltrigger-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js', array(), false, true );
+?>
+
 <?php get_header(); ?>
 
 <?php
@@ -69,30 +80,113 @@ Template Name: Impact Report
 			</header>
 			
 			<div class="pillars-intro__pillars">
-				<div class="pillars-intro__pillar">
+				<div class="pillars-intro__pillar insights__button">
 					<div class="pillars-intro__pillar--pattern">
 						<?php include(TEMPLATEPATH . '/assets/img/pillar-pattern--insights.svg'); ?>
 					</div>
-					<div class="pillars-intro__pillar--title"><?php _e('Insights', 'impact-report'); ?></div>
+					<div class="pillars-intro__pillar--title pillars-intro__pillar--title--insights"><?php _e('Insights', 'impact-report'); ?></div>
 				</div>
-				<div class="pillars-intro__pillar">
+				<div class="pillars-intro__pillar solutions__button">
 					<div class="pillars-intro__pillar--pattern">
 						<?php include(TEMPLATEPATH . '/assets/img/pillar-pattern--solutions.svg'); ?>
 					</div>
-					<div class="pillars-intro__pillar--title"><?php _e('Solutions', 'impact-report'); ?></div>
+					<div class="pillars-intro__pillar--title pillars-intro__pillar--title--solutions"><?php _e('Solutions', 'impact-report'); ?></div>
 				</div>
-				<div class="pillars-intro__pillar">
+				<div class="pillars-intro__pillar systems__button">
 					<div class="pillars-intro__pillar--pattern">
 						<?php include(TEMPLATEPATH . '/assets/img/pillar-pattern--systems.svg'); ?>
 					</div>
-					<div class="pillars-intro__pillar--title"><?php _e('Systems', 'impact-report'); ?><br /><?php _e('Change', 'impact-report'); ?></div>
+					<div class="pillars-intro__pillar--title pillars-intro__pillar--title--systems"><?php _e('Systems', 'impact-report'); ?><br /><?php _e('Change', 'impact-report'); ?></div>
 				</div>
 			</div>
 		
 		</div>
 	</div>
 	
-	<div class="impact-stories impact--insights">
+	<div class="pillars">
+		<div class="pillars--menu">pillars menu</div>
+		<div class="pillars--insights">
+			<div class="pillar__wrapper">
+				<h2 class="pillar__header"><?php _e('Insights', 'impact-report'); ?></h2>
+				<p class="pillar__text">
+					<?php _e('We bring together leaders, practitioners and experts to gain and share the insights that will ensure Canada has the skills and innovation needed for the future.', 'impact-report'); ?>
+				</p>
+				<div class="pillar__stats">
+					<div class="pillar-stat">
+						<div class="pillar-stat__wrap">300+</div>
+						<div class="pillar-stat__text"><?php _e('partnerships with ecosystem experts', 'impact-report'); ?></div>
+					</div>
+					<div class="pillar-stat">
+						<div class="pillar-stat__wrap">250+</div>
+						<div class="pillar-stat__text"><?php _e('research reports, learning bulletins and web content published', 'impact-report'); ?></div>
+					</div>
+					<div class="pillar-stat">
+						<div class="pillar-stat__wrap">13</div>
+						<div class="pillar-stat__text"><?php _e('digital platforms and career navigation tools delivered', 'impact-report'); ?></div>
+					</div>
+					<div class="pillar-stat">
+						<div class="pillar-stat__wrap">150+</div>
+						<div class="pillar-stat__text"><?php _e('speaking engagements and event appearances', 'impact-report'); ?></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pillars--solutions">
+			<div class="pillar__wrapper">
+				<h2 class="pillar__header"><?php _e('Solutions', 'impact-report'); ?></h2>
+				<p class="pillar__text">
+					<?php _e('We are working with governments, industry, post-secondary institutions and skills practitioners to', 'impact-report'); ?> <strong><?php _e('scale solutions from pilots to pan-Canadian programs', 'impact-report'); ?></strong>.
+				</p>
+				<div class="pillar__stats">
+					<div class="pillar-stat">
+						<div class="pillar-stat__wrap">300+</div>
+						<div class="pillar-stat__text"><?php _e('partnerships with ecosystem experts', 'impact-report'); ?></div>
+					</div>
+					<div class="pillar-stat">
+						<div class="pillar-stat__wrap">250+</div>
+						<div class="pillar-stat__text"><?php _e('research reports, learning bulletins and web content published', 'impact-report'); ?></div>
+					</div>
+					<div class="pillar-stat">
+						<div class="pillar-stat__wrap">13</div>
+						<div class="pillar-stat__text"><?php _e('digital platforms and career navigation tools delivered', 'impact-report'); ?></div>
+					</div>
+					<div class="pillar-stat">
+						<div class="pillar-stat__wrap">150+</div>
+						<div class="pillar-stat__text"><?php _e('speaking engagements and event appearances', 'impact-report'); ?></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pillars--systems">
+			<div class="pillar__wrapper">
+				<h2 class="pillar__header"><?php _e('Systems Change', 'impact-report'); ?></h2>
+				<p class="pillar__text">
+					<?php _e('We are now recognized as a trusted partner and leader in skills innovation that influences systems change. By fostering collaboration, engaging with policy-makers and investing in the skills development ecosystem, we ensure promising solutions grow in scale and innovation, and are adopted.', 'impact-report'); ?>
+				</p>
+				<div class="pillar__stats">
+					<div class="pillar-stat">
+						<div class="pillar-stat__wrap">300+</div>
+						<div class="pillar-stat__text"><?php _e('partnerships with ecosystem experts', 'impact-report'); ?></div>
+					</div>
+					<div class="pillar-stat">
+						<div class="pillar-stat__wrap">250+</div>
+						<div class="pillar-stat__text"><?php _e('research reports, learning bulletins and web content published', 'impact-report'); ?></div>
+					</div>
+					<div class="pillar-stat">
+						<div class="pillar-stat__wrap">13</div>
+						<div class="pillar-stat__text"><?php _e('digital platforms and career navigation tools delivered', 'impact-report'); ?></div>
+					</div>
+					<div class="pillar-stat">
+						<div class="pillar-stat__wrap">150+</div>
+						<div class="pillar-stat__text"><?php _e('speaking engagements and event appearances', 'impact-report'); ?></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<!-- <div class="impact-stories impact--insights">
 		<section class="impact-stories__slide slide--transition-start"></section>
 		<section class="impact-stories__slide slide--transition-end"></section>
 		<div class="slide__grid">
@@ -184,9 +278,7 @@ Template Name: Impact Report
 				</div>
 			</section>
 		</div>
-	</div>
-	
-	<div class="midnight"></div>
+	</div> -->
 	
 	<div class="economy">
 		<div class="economy__wrapper">
@@ -214,9 +306,8 @@ Template Name: Impact Report
 				</div>
 			</div>
 		</div>
+		<div class="economy__gradient"></div>
 	</div>
-	
-	<div class="midnight"></div>
 	
 	<div class="stats">
 		<div class="stats__wrapper">
@@ -250,7 +341,7 @@ Template Name: Impact Report
 				</div>
 				<div class="stat">
 					<h3 class="stat__headline">
-						<?php _e('nfluencing policy adoption through', 'impact-report'); ?>I</br />
+						<?php _e('Influencing policy adoption through', 'impact-report'); ?></br />
 						<strong><?php _e('4 established provincial partnerships', 'impact-report'); ?></strong> <?php _e('(BC, AB, SK, QC) and growing, encouraging investment into systems-oriented approaches.', 'impact-report'); ?>
 					</h3>
 					<div class="stat__wrap">
@@ -264,6 +355,7 @@ Template Name: Impact Report
 	</div>
 	
 	<div class="stats-chart">
+		
 		<div class="stats-chart__wrapper">
 			<div class="stats-chart__grid">
 				<div class="stats-chart__text">
@@ -311,7 +403,7 @@ Template Name: Impact Report
 						<div class="map__image"><?php include(TEMPLATEPATH . '/assets/img/map.svg'); ?></div>
 					</div>
 				</div>
-				<div class="stats-map__text">
+				<div class="stats-map__content">
 					<h2><?php _e('Investments in skills innovation across Canada Language Minority Groups Indigenous Peoples Women Youth', 'impact-report'); ?></h2>
 					<p><?php _e('We are working directly with many stake- holders including practitioners, employers and labour, post-secondary institutions and federal and provincial governments to co-invest and pilot new systems-oriented approaches that expand and improve skills training.', 'impact-report'); ?></p>
 					
@@ -492,11 +584,13 @@ Template Name: Impact Report
 			</div>
 		</div>
 		
-		<div class="accountability-box">
-			<h2 class="accountability-box__headline"<?php _e('Our commitment to excellence and accountability', 'impact-report'); ?></h2>
-			<p class="accountability-box__text"><?php _e('We adhere to the highest standards of financial accountability and transparency, earning the trust of everyone in Canada to steward public funds to catalyze skills innovation and training and enable everyone to thrive in an evolving economy.', 'impact-report'); ?></p>
-			<div class="accountability-box__cta">
-				<a href="#" class="button"><span><?php _e('Learn More', 'impact-report'); ?></span></a>
+		<div class="accountability-box__wrapper">
+			<div class="accountability-box">
+				<h2 class="accountability-box__headline"><?php _e('Our commitment to excellence and accountability', 'impact-report'); ?></h2>
+				<p class="accountability-box__text"><?php _e('We adhere to the highest standards of financial accountability and transparency, earning the trust of everyone in Canada to steward public funds to catalyze skills innovation and training and enable everyone to thrive in an evolving economy.', 'impact-report'); ?></p>
+				<div class="accountability-box__cta">
+					<a href="#" class="button"><span><?php _e('Learn More', 'impact-report'); ?></span></a>
+				</div>
 			</div>
 		</div>
 		

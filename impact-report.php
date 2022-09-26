@@ -5,10 +5,10 @@ Template Name: Impact Report
 ?>
 
 <?php
-	wp_enqueue_style( 'st-ir-style', get_stylesheet_directory_uri() . '/assets/css/impact-report.min.css', array(), filemtime( get_stylesheet_directory() . '/assets/css/impact-report.min.css' ));
-	wp_enqueue_style( 'st-owl-style', get_stylesheet_directory_uri() . '/assets/css/owl.carousel.css', array() );
-	wp_enqueue_script( 'st-global', get_stylesheet_directory_uri() . '/assets/js/global-min.js', array( 'jquery' ), true );
-	wp_enqueue_script( 'st-owl-js', get_stylesheet_directory_uri() . '/assets/js/owl.carousel.js', array(), false, true );
+	wp_enqueue_style( 'st-ir-style', get_stylesheet_directory_uri() . '/impact-report/assets/css/impact-report.min.css', array(), filemtime( get_stylesheet_directory() . '/impact-report/assets/css/impact-report.min.css' ));
+	wp_enqueue_style( 'st-owl-style', get_stylesheet_directory_uri() . '/impact-report/assets/css/owl.carousel.css', array() );
+	wp_enqueue_script( 'st-global', get_stylesheet_directory_uri() . '/impact-report/assets/js/global-min.js', array( 'jquery' ), true );
+	wp_enqueue_script( 'st-owl-js', get_stylesheet_directory_uri() . '/impact-report/assets/js/owl.carousel.js', array(), false, true );
 	wp_enqueue_script( 'gsap-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js', array(), false, true );
 	wp_enqueue_script( 'gsap-scroll-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollToPlugin.min.js', array(), false, true );
 	wp_enqueue_script( 'gsap-scrolltrigger-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js', array(), false, true );
@@ -29,7 +29,7 @@ Template Name: Impact Report
 <div class="hero">
 	<header class="hero__header">
 		<div class="hero__header--notch"></div>
-		<h1 class="hero__headline"><?php _e('Building measurable impact on the future of work through insights, innovation, and key partnerships', 'impact-report'); ?></h1>
+		<h1 class="hero__headline"><?php _e('Building measurable impact on the future of work in Canada.', 'impact-report'); ?></h1>
 	</header>
 	<div class="hero__bars">
 		<div class="hero__bar"></div>
@@ -58,12 +58,12 @@ Template Name: Impact Report
 <section class="ir-intro__wrapper">
 	<div class="ir-intro">
 		<div class="ir-intro__content">
-			<p><?php _e('The world of work is changing at a dizzying rate. Canada needs a skills-innovation ecosystem that can not only respond to these changes, but builds prosperity and sustainability for the long term.', 'impact-report'); ?></p>
+			<p><?php _e('The world is changing at an unprecedented rate. Canada needs skills innovation that can respond to these changes and build prosperity for all.', 'impact-report'); ?></p>
 				
-			<p><?php _e('At FSC, we are dedicated to helping everyone in Canada gain the skills they need to thrive in a changing labour market. We have solidified ourselves as Canada’s world-class skills- innovation hub and we are pleased to showcase some of the impact we have had on the ecosystem in the past few years.', 'impact-report'); ?></p>
+			<p><?php _e('We are pleased to bring you this report and showcase some of the impact we have had on the skills development ecosystem over the past few years.', 'impact-report'); ?></p>
 		</div>
 		<div class="ir-intro__hexagons">
-			<?php include(TEMPLATEPATH . '/assets/img/hexagons.svg'); ?>
+			<?php include(TEMPLATEPATH . '/impact-report/assets/img/hexagons.svg'); ?>
 		</div>
 	</div>
 </section>
@@ -82,19 +82,19 @@ Template Name: Impact Report
 			<div class="pillars-intro__pillars">
 				<div class="pillars-intro__pillar insights__button">
 					<div class="pillars-intro__pillar--pattern">
-						<?php include(TEMPLATEPATH . '/assets/img/pillar-pattern--insights.svg'); ?>
+						<?php include(TEMPLATEPATH . '/impact-report/assets/img/pillar-pattern--insights.svg'); ?>
 					</div>
 					<div class="pillars-intro__pillar--title pillars-intro__pillar--title--insights"><?php _e('Insights', 'impact-report'); ?></div>
 				</div>
 				<div class="pillars-intro__pillar solutions__button">
 					<div class="pillars-intro__pillar--pattern">
-						<?php include(TEMPLATEPATH . '/assets/img/pillar-pattern--solutions.svg'); ?>
+						<?php include(TEMPLATEPATH . '/impact-report/assets/img/pillar-pattern--solutions.svg'); ?>
 					</div>
 					<div class="pillars-intro__pillar--title pillars-intro__pillar--title--solutions"><?php _e('Solutions', 'impact-report'); ?></div>
 				</div>
 				<div class="pillars-intro__pillar systems__button">
 					<div class="pillars-intro__pillar--pattern">
-						<?php include(TEMPLATEPATH . '/assets/img/pillar-pattern--systems.svg'); ?>
+						<?php include(TEMPLATEPATH . '/impact-report/assets/img/pillar-pattern--systems.svg'); ?>
 					</div>
 					<div class="pillars-intro__pillar--title pillars-intro__pillar--title--systems"><?php _e('Systems', 'impact-report'); ?><br /><?php _e('Change', 'impact-report'); ?></div>
 				</div>
@@ -109,7 +109,8 @@ Template Name: Impact Report
 			<div class="pillar__wrapper">
 				<h2 class="pillar__header"><?php _e('Insights', 'impact-report'); ?></h2>
 				<p class="pillar__text">
-					<?php _e('We bring together leaders, practitioners and experts to gain and share the insights that will ensure Canada has the skills and innovation needed for the future.', 'impact-report'); ?>
+					<?php _e('We bring together leaders, practitioners and experts to gain and share the insights that will', 'impact-report'); ?> <strong><?php _e('ensure Canada has the skills and innovation needed for the future', 'impact-report'); ?></strong>.
+					
 				</p>
 				<div class="pillar__stats">
 					<div class="pillar-stat">
@@ -192,19 +193,19 @@ Template Name: Impact Report
 			</header>
 			<div class="economy__grid">
 				<div class="economy-item">
-					<div class="economy-item__icon"><?php include(TEMPLATEPATH . '/assets/img/plus.svg'); ?></div>
+					<div class="economy-item__icon"><?php include(TEMPLATEPATH . '/impact-report/assets/img/plus.svg'); ?></div>
 					<div class="economy-item__text">
 						<strong><?php _e('Unmet skills needs cost the economy $25B', 'impact-report'); ?></strong> <?php _e('or 1.3% of GDP in 2020, up 60% from 2015', 'impact-report'); ?>
 					</div>
 				</div>
 				<div class="economy-item">
-					<div class="economy-item__icon"><?php include(TEMPLATEPATH . '/assets/img/plus.svg'); ?></div>
+					<div class="economy-item__icon"><?php include(TEMPLATEPATH . '/impact-report/assets/img/plus.svg'); ?></div>
 					<div class="economy-item__text">
-						<strong><?php _e('900,000+ positions were unfilled', 'impact-report'); ?></strong> <?php _e('in 2021; half remained unfilled for 60 days', 'impact-report'); ?>
+						<strong><?php _e('900,000+ positions were unfilled in 2021', 'impact-report'); ?></strong>, <?php _e('half remained unfilled for 60 days', 'impact-report'); ?>
 					</div>
 				</div>
 				<div class="economy-item">
-					<div class="economy-item__icon"><?php include(TEMPLATEPATH . '/assets/img/plus.svg'); ?></div>
+					<div class="economy-item__icon"><?php include(TEMPLATEPATH . '/impact-report/assets/img/plus.svg'); ?></div>
 					<div class="economy-item__text">
 						<strong><?php _e('The pandemic has accelerated automation', 'impact-report'); ?></strong>, <?php _e('disrupting more sectors and workers', 'impact-report'); ?>
 					</div>
@@ -225,7 +226,7 @@ Template Name: Impact Report
 				<div class="stat">
 					<h3 class="stat__headline">
 						Creating more than<br />
-						<strong><?php _e('13 new digital platforms for labour market information and career navigation tools'); ?></strong> <?php _e('to help people and industries navigate change'); ?>.
+						<strong><?php _e('13 new digital platforms for labour market information and career navigation tools'); ?></strong> <?php _e('to help people and industries navigate change.'); ?>
 					</h3>
 					<div class="stat__wrap">
 						<div class="stat__num stat--01">0.1</div>
@@ -268,7 +269,7 @@ Template Name: Impact Report
 				</div>
 				<div class="stats-chart__stat">
 					<div class="chart">
-						<div class="chart__image"><?php include(TEMPLATEPATH . '/assets/img/chart.svg'); ?></div>
+						<div class="chart__image"><?php include(TEMPLATEPATH . '/impact-report/assets/img/chart.svg'); ?></div>
 						<div class="chart__data">
 							<div class="chart__data-item chart__data-item--01"><?php _e('Language Minority Groups', 'impact-report'); ?></div>
 							<div class="chart__data-item chart__data-item--02"><?php _e('Indigenous Peoples', 'impact-report'); ?></div>
@@ -288,13 +289,13 @@ Template Name: Impact Report
 			<div class="media__mask"></div>
 			<div class="media__grid">
 				<div class="media__label"><?php _e('Watch Video', 'impact-report'); ?></div>
-				<div class="media__icon"><?php include(TEMPLATEPATH . '/assets/img/video.svg'); ?></div>
+				<div class="media__icon"><?php include(TEMPLATEPATH . '/impact-report/assets/img/video.svg'); ?></div>
 				<div class="media__content">
 					<video controls width="100%">
-						<source src="<?php bloginfo('template_directory'); ?>/assets/video/ir-clip.mp4" type="video/mp4">
+						<source src="<?php bloginfo('template_directory'); ?>/impact-report/assets/video/ir-clip.mp4" type="video/mp4">
 					</video>
 				</div>
-				<div class="media__plus"><?php include(TEMPLATEPATH . '/assets/img/plus.svg'); ?></div>
+				<div class="media__plus"><?php include(TEMPLATEPATH . '/impact-report/assets/img/plus.svg'); ?></div>
 			</div>
 		</div>
 		
@@ -305,7 +306,7 @@ Template Name: Impact Report
 			<div class="stats-map__grid">
 				<div class="stats-map__stat">
 					<div class="map">
-						<div class="map__image"><?php include(TEMPLATEPATH . '/assets/img/map.svg'); ?></div>
+						<div class="map__image"><?php include(TEMPLATEPATH . '/impact-report/assets/img/map.svg'); ?></div>
 					</div>
 				</div>
 				<div class="stats-map__content">
@@ -335,7 +336,7 @@ Template Name: Impact Report
 			<div class="media__mask"></div>
 			<div class="media__grid">
 				<div class="media__label"><?php _e('Read Testimonial', 'impact-report'); ?></div>
-				<div class="media__icon"><?php include(TEMPLATEPATH . '/assets/img/quotes.svg'); ?></div>
+				<div class="media__icon"><?php include(TEMPLATEPATH . '/impact-report/assets/img/quotes.svg'); ?></div>
 				<div class="media__content">
 					<p class="media__text"><?php _e('FSC has set up something truly amazing to push our ecosystem forward, and we can access experts who support research that uncovers why In Motion & Momentum works, what its impacts are, and how it benefits the system.', 'impact-report'); ?></p>
 					<div class="media__cite">
@@ -343,7 +344,7 @@ Template Name: Impact Report
 						<div class="media__cite-position"><?php _e('Managing Director, Canadian Career Development Foundation', 'impact-report'); ?></div>
 					</div>
 				</div>
-				<div class="media__plus"><?php include(TEMPLATEPATH . '/assets/img/plus.svg'); ?></div>
+				<div class="media__plus"><?php include(TEMPLATEPATH . '/impact-report/assets/img/plus.svg'); ?></div>
 			</div>
 		</div>
 		
@@ -354,11 +355,11 @@ Template Name: Impact Report
 			
 			<div class="impact-story">
 				<div class="impact-story__image">
-					<img src="<?php bloginfo('template_directory'); ?>/assets/img/Kate.jpg" alt="">
+					<img src="<?php bloginfo('template_directory'); ?>/impact-report/assets/img/Kate.jpg" alt="">
 				</div>
 				<div class="impact-story__content">
 					<header class="impact-story__header">
-						<div class="impact-story__icon"><?php include(TEMPLATEPATH . '/assets/img/icon--insights.svg'); ?></div>
+						<div class="impact-story__icon"><?php include(TEMPLATEPATH . '/impact-report/assets/img/icon--insights.svg'); ?></div>
 						<h2 class="impact-story__headline"><?php _e('Insights to enable opportunities beyond social assistance', 'impact-report'); ?></h2>
 					</header>
 					<p><?php _e('Kate, an Inuit woman living in a remote community, had been struggling for years with anxiety and precarious work. Like many, she entered the labour market before being work-ready, cycling back into social assistance. Through In Motion & Momentum, a program that serves people with systemic and intrapersonal challenges, she formulated new life goals and enrolled in a trades and technology program to start a career.', 'impact-report'); ?></p>
@@ -370,11 +371,11 @@ Template Name: Impact Report
 			</div>
 			<div class="impact-story">
 				<div class="impact-story__image">
-					<img src="<?php bloginfo('template_directory'); ?>/assets/img/Filipe.jpg" alt="">
+					<img src="<?php bloginfo('template_directory'); ?>/impact-report/assets/img/Filipe.jpg" alt="">
 				</div>
 				<div class="impact-story__content">
 					<header class="impact-story__header">
-						<div class="impact-story__icon"><?php include(TEMPLATEPATH . '/assets/img/icon--solutions.svg'); ?></div>
+						<div class="impact-story__icon"><?php include(TEMPLATEPATH . '/impact-report/assets/img/icon--solutions.svg'); ?></div>
 						<h2 class="impact-story__headline"><?php _e('Mid-career transitions from energy to tech', 'impact-report'); ?></h2>
 					</header>
 					<p><?php _e('The oil and gas sector in Calgary has had to pivot, displacing many highly skilled workers. FSC is supporting a Calgary Economic Development solution to help these workers transition to the high-growth IT sector and fuel Alberta’s economy.', 'impact-report'); ?></p>
@@ -388,11 +389,11 @@ Template Name: Impact Report
 			</div>
 			<div class="impact-story">
 				<div class="impact-story__image">
-					<img src="<?php bloginfo('template_directory'); ?>/assets/img/Saeed.jpg" alt="">
+					<img src="<?php bloginfo('template_directory'); ?>/impact-report/assets/img/Saeed.jpg" alt="">
 				</div>
 				<div class="impact-story__content">
 					<header class="impact-story__header">
-						<div class="impact-story__icon"><?php include(TEMPLATEPATH . '/assets/img/icon--systems.svg'); ?></div>
+						<div class="impact-story__icon"><?php include(TEMPLATEPATH . '/impact-report/assets/img/icon--systems.svg'); ?></div>
 						<h2 class="impact-story__headline"><?php _e('Accelerating newcomer integration', 'impact-report'); ?></h2>
 					</header>
 					<p><?php _e('Saeed arrived from Iran with a decade of experience in the financial industry but couldn’t get a foothold in the Canadian labour market. Many newcomers whose foreign credentials aren’t recognized face barriers that exacerbate higher unemployment and low wages.', 'impact-report'); ?></p>
@@ -472,9 +473,9 @@ Template Name: Impact Report
 			<div class="pandemic-pivot">	
 				<div class="pandemic-pivot__open">
 					<div class="pandemic-pivot__dot"></div>
-					<div class="pandemic-pivot__line"><?php include(TEMPLATEPATH . '/assets/img/dotted-line.svg'); ?></div>
+					<div class="pandemic-pivot__line"><?php include(TEMPLATEPATH . '/impact-report/assets/img/dotted-line.svg'); ?></div>
 					<div class="pandemic-pivot__label"><?php _e('Pandemic Pivot', 'impact-report'); ?></div>
-					<button class="pandemic-pivot__plus"><?php include(TEMPLATEPATH . '/assets/img/plus.svg'); ?></button>
+					<button class="pandemic-pivot__plus"><?php include(TEMPLATEPATH . '/impact-report/assets/img/plus.svg'); ?></button>
 				</div>
 				<div class="pandemic-pivot__wrapper">
 					<div class="pandemic-pivot__content">
@@ -503,7 +504,7 @@ Template Name: Impact Report
 			<div class="media__mask"></div>
 			<div class="media__grid">
 				<div class="media__label"><?php _e('Read Testimonial', 'impact-report'); ?></div>
-				<div class="media__icon"><?php include(TEMPLATEPATH . '/assets/img/quotes.svg'); ?></div>
+				<div class="media__icon"><?php include(TEMPLATEPATH . '/impact-report/assets/img/quotes.svg'); ?></div>
 				<div class="media__content">
 					<p class="media__text"><?php _e('FSC has set up something truly amazing to push our ecosystem forward, and we can access experts who support research that uncovers why In Motion & Momentum works, what its impacts are, and how it benefits the system.', 'impact-report'); ?></p>
 					<div class="media__cite">
@@ -511,7 +512,7 @@ Template Name: Impact Report
 						<div class="media__cite-position"><?php _e('Managing Director, Canadian Career Development Foundation', 'impact-report'); ?></div>
 					</div>
 				</div>
-				<div class="media__plus"><?php include(TEMPLATEPATH . '/assets/img/plus.svg'); ?></div>
+				<div class="media__plus"><?php include(TEMPLATEPATH . '/impact-report/assets/img/plus.svg'); ?></div>
 			</div>
 		</div>
 		
@@ -519,23 +520,23 @@ Template Name: Impact Report
 	<section class="cards">
 		<div class="cards__wrapper">
 			<header class="cards__header">
-				<h2 class="cards__headline"><?php _e('Missing Headline... elit libero, a pharetra augue.', 'impact-report'); ?></h2>
-				<p class="cards__byline"><?php _e('Missing byline... Nullam quis risus eget urna mollis ornare vel eu leo.', 'impact-report'); ?></p>
+				<h2 class="cards__headline"><?php _e('Engage with us to drive innovation in skills development', 'impact-report'); ?></h2>
+				<p class="cards__byline"><?php _e('There’s much more to be done to ensure that everyone in Canada can participate in our shared prosperity today and tomorrow.', 'impact-report'); ?></p>
 			</header>
 			<div class="cards__grid">
 				<div class="card card--01">
 					<h2 class="card__headline"><?php _e('Events', 'impact-report'); ?></h2>
-					<p class="card__text"><?php _e('Explore the upcoming and past events from the Future Skills Centre and its partners across the country.', 'impact-report'); ?></p>
+					<p class="card__text"><?php _e('Explore the upcoming and past events from the Future Skills Centre and its partners across the country. From events exploring entrepreneurship, to sustainability, and career guidance, we hope to see you there.', 'impact-report'); ?></p>
 					<a href="#" class="card__cta button-neon button-neon--small"><?php _e('Explore Events', 'impact-report'); ?></a>
 				</div>
 				<div class="card card--02">
 					<h2 class="card__headline"><?php _e('Join the Community of Practice', 'impact-report'); ?></h2>
-					<p class="card__text"><?php _e('Facilitate connections to make change happen. Share your experiences, access curated products, case studies and tools, explore common interests, and network with others who are preparing Canadians for the future of work! Find out how others are working to support.', 'impact-report'); ?></p>
-					<a href="#" class="card__cta button-neon button-neon--small"><?php _e('Join Community', 'impact-report'); ?></a>
+					<p class="card__text"><?php _e('Facilitate connections to make change happen. Share your experiences, access curated products, case studies and tools, explore common interests, and network with others who are preparing Canadians for the future of work!', 'impact-report'); ?></p>
+					<a href="#" class="card__cta button-neon button-neon--small"><?php _e('Join the COP', 'impact-report'); ?></a>
 				</div>
 				<div class="card card--03">
-					<h2 class="card__headline"><?php _e('Explore the stories of future skills', 'impact-report'); ?></h2>
-					<p class="card__text"><?php _e('Read our blog, or listen to our podcast.', 'impact-report'); ?></p>
+					<h2 class="card__headline"><?php _e('Perspectives on future skills', 'impact-report'); ?></h2>
+					<p class="card__text"><?php _e('Dive into the stories and perspectives of the skills development ecosystem and the Canadian labour market by reading our blog, or listening to our podcast.', 'impact-report'); ?></p>
 					<a href="#" class="card__cta button-neon button-neon--small"><?php _e('Explore Stories', 'impact-report'); ?></a>
 				</div>
 			</div>

@@ -12,6 +12,7 @@ Template Name: Impact Report
 	wp_enqueue_script( 'gsap-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js', array(), false, true );
 	wp_enqueue_script( 'gsap-scroll-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollToPlugin.min.js', array(), false, true );
 	wp_enqueue_script( 'gsap-scrolltrigger-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js', array(), false, true );
+	wp_enqueue_script( 'gsap-draw-js', get_stylesheet_directory_uri() . '/assets/js/DrawSVGPlugin.min.js', array(), false, true );
 ?>
 
 <?php get_header(); ?>
@@ -50,7 +51,7 @@ Template Name: Impact Report
 		<div class="ir-intro__content">
 			<p><?php _e('The world is changing at an unprecedented rate. Canada needs skills innovation that can respond to these changes and build prosperity for all.', 'impact-report'); ?></p>
 				
-			<p><?php _e('We are pleased to bring you this report and showcase some of the impact we have had on the skills development ecosystem over the past few years.', 'impact-report'); ?></p>
+			<p><?php _e('We are pleased to bring you this report and showcase some of the impact we have had, alongside our incredible partners, on the skills development ecosystem over the past few years.', 'impact-report'); ?></p>
 		</div>
 		<div class="ir-intro__hexagons">
 			<?php include(TEMPLATEPATH . '/impact-report/assets/img/hexagons.svg'); ?>
@@ -99,7 +100,12 @@ Template Name: Impact Report
 			<button class="pillars-menu__button pillars-menu--solutions" aria-label="Scroll To Solutions"><?php include(TEMPLATEPATH . '/impact-report/assets/img/icon--solutions.svg'); ?></button>
 			<button class="pillars-menu__button pillars-menu--systems" aria-label="Scroll To Systems Change"><?php include(TEMPLATEPATH . '/impact-report/assets/img/icon--systems.svg'); ?></button>
 		</div>
-		<div class="pillars--insights">
+		
+		<div class="pillar pillars--insights">
+			<div class="pillar__gradient"></div>
+			<div class="pillar__pattern">
+				<?php include(TEMPLATEPATH . '/impact-report/assets/img/pillar-pattern--insights.svg'); ?>
+			</div>
 			<div class="pillar__wrapper">
 				<h2 class="pillar__header"><?php _e('Insights', 'impact-report'); ?></h2>
 				<p class="pillar__text">
@@ -136,7 +142,11 @@ Template Name: Impact Report
 				</div>
 			</div>
 		</div>
-		<div class="pillars--solutions">
+		<div class="pillar pillars--solutions">
+			<div class="pillar__gradient"></div>
+			<div class="pillar__pattern">
+				<?php include(TEMPLATEPATH . '/impact-report/assets/img/pillar-pattern--solutions.svg'); ?>
+			</div>
 			<div class="pillar__wrapper">
 				<h2 class="pillar__header"><?php _e('Solutions', 'impact-report'); ?></h2>
 				<p class="pillar__text">
@@ -157,24 +167,50 @@ Template Name: Impact Report
 						</div>
 						<div class="pillar-stat__text"><?php _e('sectors supported across all provinces and territories', 'impact-report'); ?></div>
 					</div>
+					
 					<div class="pillar-stat">
-						<div class="pillar-stat__wrap">
-							<div class="pillar-stat__num pillar-stat--07">0</div>
-							<div>%</div>
+						<div class="pillar-stat--donut-wrap">
+							<div class="pillar-stat--donut">
+								<svg class="pillar-stat--07--svg" viewBox="0 0 160 160" height="160" width="160" xmlns="http://www.w3.org/2000/svg">
+									<circle class="pillar-stat--07--bg" cx="80" cy="80" r="70" fill="none" stroke="#4C294F" stroke-width="20"/>
+									<circle class="pillar-stat--07--path" cx="80" cy="80" r="70" fill="none" stroke="#ffb6ff" stroke-width="20"/>
+								</svg>
+							</div>
+							<div class="pillar-stat--donut-percentage">
+								<div class="pillar-stat__wrap pillar-stat__wrap--percentage">
+									<div class="pillar-stat__num pillar-stat--07">0</div>
+									<div>%</div>
+								</div>
+							</div>
 						</div>
 						<div class="pillar-stat__text"><?php _e('of projects are employer-led or partnered solutions', 'impact-report'); ?></div>
 					</div>
+					
 					<div class="pillar-stat">
-						<div class="pillar-stat__wrap">
-							<div class="pillar-stat__num pillar-stat--08">0</div>
-							<div>%</div>
+						<div class="pillar-stat--donut-wrap">
+							<div class="pillar-stat--donut">
+								<svg class="pillar-stat--08--svg" viewBox="0 0 160 160" height="160" width="160" xmlns="http://www.w3.org/2000/svg">
+									<circle class="pillar-stat--08--bg" cx="80" cy="80" r="70" fill="none" stroke="#4C294F" stroke-width="20"/>
+									<circle class="pillar-stat--08--path" cx="80" cy="80" r="70" fill="none" stroke="#ffb6ff" stroke-width="20"/>
+								</svg>
+							</div>
+							<div class="pillar-stat--donut-percentage">
+								<div class="pillar-stat__wrap pillar-stat__wrap--percentage">
+									<div class="pillar-stat__num pillar-stat--08">0</div>
+									<div>%</div>
+								</div>
+							</div>
 						</div>
 						<div class="pillar-stat__text"><?php _e('of projects are growing or scaling', 'impact-report'); ?></div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="pillars--systems">
+		<div class="pillar pillars--systems">
+			<div class="pillar__gradient"></div>
+			<div class="pillar__pattern">
+				<?php include(TEMPLATEPATH . '/impact-report/assets/img/pillar-pattern--systems.svg'); ?>
+			</div>
 			<div class="pillar__wrapper">
 				<h2 class="pillar__header"><?php _e('Systems Change', 'impact-report'); ?></h2>
 				<p class="pillar__text">
@@ -194,13 +230,25 @@ Template Name: Impact Report
 						</div>
 						<div class="pillar-stat__text"><?php _e('active members in our Community of Practice', 'impact-report'); ?></div>
 					</div>
+					
 					<div class="pillar-stat">
-						<div class="pillar-stat__wrap">
-							<div class="pillar-stat__num pillar-stat--11">0</div>
-							<div>%</div>
+						<div class="pillar-stat--donut-wrap">
+							<div class="pillar-stat--donut">
+								<svg class="pillar-stat--11--svg" viewBox="0 0 160 160" height="160" width="160" xmlns="http://www.w3.org/2000/svg">
+									<circle class="pillar-stat--11--bg" cx="80" cy="80" r="70" fill="none" stroke="#4C294F" stroke-width="20"/>
+									<circle class="pillar-stat--11--path" cx="80" cy="80" r="70" fill="none" stroke="#ffb6ff" stroke-width="20"/>
+								</svg>
+							</div>
+							<div class="pillar-stat--donut-percentage">
+								<div class="pillar-stat__wrap pillar-stat__wrap--percentage">
+									<div class="pillar-stat__num pillar-stat--11">0</div>
+									<div>%</div>
+								</div>
+							</div>
 						</div>
 						<div class="pillar-stat__text"><?php _e('of partners participating in our Innovation Lab', 'impact-report'); ?></div>
 					</div>
+					
 					<div class="pillar-stat">
 						<div class="pillar-stat__wrap">
 							<div class="pillar-stat__num pillar-stat--12">1st</div>
@@ -315,7 +363,7 @@ Template Name: Impact Report
 		
 		<div class="media media--01">
 			<div class="media__grid">
-				<div class="media__label"><?php _e('Read Testimonial', 'impact-report'); ?></div>
+				<div class="media__label"><?php _e('Building partnerships', 'impact-report'); ?></div>
 				<div class="media__icon"><?php include(TEMPLATEPATH . '/impact-report/assets/img/quotes.svg'); ?></div>
 				<div class="media__content">
 					<p class="media__text">
@@ -367,13 +415,13 @@ Template Name: Impact Report
 		</div>
 		<div class="media media--03">
 			<div class="media__grid">
-				<div class="media__label"><?php _e('Watch Video', 'impact-report'); ?></div>
+				<div class="media__label"><?php _e('Watch Felipe’s Story', 'impact-report'); ?></div>
 				<div class="media__icon"><?php include(TEMPLATEPATH . '/impact-report/assets/img/video.svg'); ?></div>
 				<div class="media__content">
 					<video controls width="100%">
 						<source src="<?php bloginfo('template_directory'); ?>/impact-report/assets/video/ir-clip.mp4" type="video/mp4">
 					</video>
-					<p class="media__text"><small><?php _e('This video is in English. For French subtitles, please select the "auto-translate" option by clicking on the gear icon and opening the subtitle menu.', 'impact-report'); ?></small></p>
+					<!-- <p class="media__text"><small><?php _e('This video is in English. For French subtitles, please select the "auto-translate" option by clicking on the gear icon and opening the subtitle menu.', 'impact-report'); ?></small></p> -->
 				</div>
 				<div class="media__plus"><?php include(TEMPLATEPATH . '/impact-report/assets/img/plus.svg'); ?></div>
 			</div>
@@ -535,7 +583,7 @@ Template Name: Impact Report
 		
 		<div class="media media--02">
 			<div class="media__grid">
-				<div class="media__label"><?php _e('Read Testimonial', 'impact-report'); ?></div>
+				<div class="media__label"><?php _e('Helping partners test & evaluate', 'impact-report'); ?></div>
 				<div class="media__icon"><?php include(TEMPLATEPATH . '/impact-report/assets/img/quotes.svg'); ?></div>
 				<div class="media__content">
 					<p class="media__text"><?php _e('These solutions – the testing and evaluation of some of the actual assets that have been developed – we would’ve been very hard pressed to make the progress that we’ve made without the Future Skills Centre’s support.', 'impact-report'); ?> <strong><?php _e('We can scale some of the best practices that were identified as we’re working with other provinces.', 'impact-report'); ?></strong> <?php _e('It makes it exciting – not just in how it helped us  to begin to respond and provide solutions, but also to start to think ahead.', 'impact-report'); ?></p>
@@ -572,6 +620,7 @@ Template Name: Impact Report
 					<?php _e('<a href="/engage-with-us/" class="card__cta button-neon button-neon--small">Explore Stories</a>', 'impact-report'); ?>
 				</div>
 			</div>
+			<<div class="download-report"><?php _e('<a href="https://fsc-ccf.ca/wp-content/uploads/2022/09/FSC_ImpactReport2022_EN_Digital_FINAL.pdf" class="button-dark">Download the full Impact Report PDF</a>', 'impact-report'); ?></div>>
 		</div>
 	</section>
 

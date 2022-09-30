@@ -12,7 +12,7 @@ Template Name: Impact Report
 	wp_enqueue_script( 'gsap-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js', array(), false, true );
 	wp_enqueue_script( 'gsap-scroll-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollToPlugin.min.js', array(), false, true );
 	wp_enqueue_script( 'gsap-scrolltrigger-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js', array(), false, true );
-	wp_enqueue_script( 'gsap-draw-js', get_stylesheet_directory_uri() . '/assets/js/DrawSVGPlugin.min.js', array(), false, true );
+	wp_enqueue_script( 'gsap-draw-js', get_stylesheet_directory_uri() . '/impact-report/assets/js/DrawSVGPlugin.min.js', array(), false, true );
 ?>
 
 <?php get_header(); ?>
@@ -269,7 +269,7 @@ Template Name: Impact Report
 				<div class="economy-item">
 					<div class="economy-item__icon"><?php include(TEMPLATEPATH . '/impact-report/assets/img/plus.svg'); ?></div>
 					<div class="economy-item__text">
-						<strong><?php _e('<a href="https://www.conferenceboard.ca/e-library/abstract.aspx?did=11534">Unmet skills needs cost the economy $25B</a>', 'impact-report'); ?></strong> <?php _e('or 1.3% of GDP in 2020, up 60% from 2015', 'impact-report'); ?>
+						<strong><?php _e('<a href="/research/lost-opportunities-measuring-the-unrealized-value-of-skill-vacancies-in-canada/">Unmet skills needs cost the economy $25B</a>', 'impact-report'); ?></strong> <?php _e('or 1.3% of GDP in 2020, up 60% from 2015', 'impact-report'); ?>
 					</div>
 				</div>
 				<div class="economy-item">
@@ -503,7 +503,7 @@ Template Name: Impact Report
 					<ul class="milestone__list">
 						<li><?php _e('FSC is launched', 'impact-report'); ?></li>
 						<li><?php _e('First cross-Canada regional sounding tour', 'impact-report'); ?></li>
-						<li><?php _e('Inaugural research series', 'impact-report <a href="/research/skills-next/">"Skills Next"</a>'); ?></li>
+						<li><?php _e('Inaugural research series <a href="/research/skills-next/">"Skills Next"</a>', 'impact-report'); ?></li>
 						<li><?php _e('First round of innovation pilots launched', 'impact-report'); ?></li>
 					</ul>
 				</div>
@@ -620,7 +620,7 @@ Template Name: Impact Report
 					<?php _e('<a href="/engage-with-us/" class="card__cta button-neon button-neon--small">Explore Stories</a>', 'impact-report'); ?>
 				</div>
 			</div>
-			<<div class="download-report"><?php _e('<a href="https://fsc-ccf.ca/wp-content/uploads/2022/09/FSC_ImpactReport2022_EN_Digital_FINAL.pdf" class="button-dark">Download the full Impact Report PDF</a>', 'impact-report'); ?></div>>
+			<div class="download-report"><?php _e('<a href="https://fsc-ccf.ca/wp-content/uploads/2022/09/FSC_ImpactReport2022_EN_Digital_FINAL.pdf" class="button-dark">Download the full Impact Report PDF</a>', 'impact-report'); ?></div>
 		</div>
 	</section>
 

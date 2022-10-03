@@ -87,7 +87,7 @@ Template Name: Impact Report
 					<div class="pillars-intro__pillar--pattern">
 						<?php include(TEMPLATEPATH . '/impact-report/assets/img/pillar-pattern--systems.svg'); ?>
 					</div>
-					<div class="pillars-intro__pillar--title pillars-intro__pillar--title--systems"><?php _e('Systems', 'impact-report'); ?><br /><?php _e('Change', 'impact-report'); ?></div>
+					<div class="pillars-intro__pillar--title pillars-intro__pillar--title--systems"><?php _e('Systems<br />Change', 'impact-report'); ?></div>
 				</button>
 			</div>
 		
@@ -301,8 +301,8 @@ Template Name: Impact Report
 				<div class="stats__grid">
 					<div class="stat">
 						<h3 class="stat__headline">
-							Creating more than<br />
-							<strong><?php _e('13 new digital platforms for labour market information and career navigation tools'); ?></strong> <?php _e('to help people and industries navigate change.'); ?>
+							<?php _e('Creating more than', 'impact-report'); ?><br />
+							<strong><?php _e('13 new digital platforms for labour market information and career navigation tools', 'impact-report'); ?></strong> <?php _e('to help people and industries navigate change.', 'impact-report'); ?>
 						</h3>
 						<div class="stat__wrap">
 							<div class="stat__num stat--01">0.1</div>
@@ -541,7 +541,7 @@ Template Name: Impact Report
 						<div class="milestone__header--edge-02"></div>
 					</header>
 					<ul class="milestone__list flip">
-						<li><?php _e('<a href="/futureskillscentre/events/2022-summit/">Inaugural Future Skills Summit</a>', 'impact-report'); ?></li>
+						<li><?php _e('<a href="https://www.conferenceboard.ca/futureskillscentre/events/2022-summit">Inaugural Future Skills Summit</a>', 'impact-report'); ?></li>
 						<li><?php _e('Milestone partnership with Quebec on future skills innovation', 'impact-report'); ?></li>
 						<li><?php _e('13 pilots expanded to tackle skills shortages', 'impact-report'); ?></li>
 					</ul>
@@ -626,5 +626,5 @@ Template Name: Impact Report
 
 </article>
 
-<?php get_footer(); ?>
+<?php get_footer('minified'); ?>
 
